@@ -6,6 +6,8 @@ import google.generativeai as genai
 # Se sua chave não estiver nas variáveis de ambiente, coloque ela abaixo dentro das aspas:
 # Exemplo: API_KEY = "AIzaSyD..."
 API_KEY = "Suachaveaqui"
+#Escolha o modelo a ser utilizado
+NOME_MODELO = "gemini-2.5-flash"
 
 # Códigos de Cores (ANSI) para dar o visual
 COR_LOGO_1 = "\033[38;5;39m"  # Azul Ciano
@@ -26,9 +28,10 @@ def mostrar_logo():
     {COR_LOGO_2}| |_| | |___| |  | || || |\  || | {COR_RESET}
     {COR_LOGO_2} \____|_____|_|  |_|___|_| \_|___|{COR_RESET}
     
-    {COR_RESET}>>> Terminal Chat - Debian 32-bit Edition <<<
+    {COR_RESET}>>> Terminal Chat - Debian 32-bit Edition - By Celso Jr. & Google <<<
     """
     print(logo)
+    print(f"    Modelo atual: {NOME_MODELO}\n")
 
 def main():
     limpar_tela()
@@ -41,7 +44,7 @@ def main():
 
     try:
         genai.configure(api_key=API_KEY)
-        model = genai.GenerativeModel('gemini-2.5-flash')
+        model = genai.GenerativeModel(NOME_MODELO)
         chat = model.start_chat(history=[])
         
         print("Digite sua mensagem (ou 'sair' para fechar).\n")
