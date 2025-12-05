@@ -41,7 +41,7 @@ def main():
 
     try:
         genai.configure(api_key=API_KEY)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         chat = model.start_chat(history=[])
         
         print("Digite sua mensagem (ou 'sair' para fechar).\n")
