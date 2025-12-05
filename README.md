@@ -6,3 +6,8 @@ sudo apt install python3-pip python3-venv
 python3 -m venv venv
 source venv/bin/activate
 pip install google-generativeai_
+
+
+ATENÇÂO!
+Caso apareça o erro 404 (erro de modelo), significa que o modelo atual do código não é compativel com a sua conta do google.
+verifique os modelos compativeis utilizando o código _teste.py_ disponivel no diretório.
