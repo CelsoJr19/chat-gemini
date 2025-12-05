@@ -5,7 +5,7 @@ import google.generativeai as genai
 # --- CONFIGURAÇÃO ---
 # Se sua chave não estiver nas variáveis de ambiente, coloque ela abaixo dentro das aspas:
 # Exemplo: API_KEY = "AIzaSyD..."
-API_KEY = os.environ.get("GEMINI_API_KEY") 
+API_KEY = Suachaveaqui!
 
 # Códigos de Cores (ANSI) para dar o visual
 COR_LOGO_1 = "\033[38;5;39m"  # Azul Ciano
